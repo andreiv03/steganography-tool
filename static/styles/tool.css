@@ -1,0 +1,64 @@
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+}
+
+.content .decoded_message {
+	max-width: 375px;
+	margin-bottom: 3rem;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.content .decoded_message h2 {
+	font-size: 1.125rem;
+	font-weight: 600;
+}
+
+.content .decoded_message span {
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.content form {
+	max-width: 375px;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.content form div {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+.content form label {
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+.content form input {
+	height: 2.5rem;
+	border-radius: 0.25rem;
+	border: 1px solid var(--foreground-two);
+	padding: 0.425rem 0.5rem;
+	font-size: 1rem;
+}
+
+.content form button {
+	height: 2.5rem;
+	border-radius: 0.25rem;
+	background: var(--foreground-two);
+	color: var(--background-one);
+	cursor: pointer;
+}
+
+.content form button a {
+	color: var(--background-one);
+	text-decoration: none;
+}
