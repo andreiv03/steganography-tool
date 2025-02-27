@@ -1,11 +1,19 @@
 .content {
+	padding: 1rem;
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
 	flex: 1;
 }
 
 .content h1 {
 	font-size: 2.5rem;
-	font-weight: 600;
+	font-weight: 700;
+	text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+	.content h1 {
+		font-size: 2rem;
+	}
 }

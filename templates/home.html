@@ -1,45 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta
-			content="width=device-width, initial-scale=1, shrink-to-fit=no"
-			name="viewport"
-		/>
+{% extends "base.html" %}
 
-		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-			rel="stylesheet"
-		/>
+{% block extra_styles %}
+  <link href="{{ url_for('static', filename='styles/home.css') }}" rel="stylesheet" />
+{% endblock %}
+{% block title %}Home | Steganography Tool{% endblock %}
 
-		<link
-			href="{{ url_for('static', filename='styles/globals.css') }}"
-			rel="stylesheet"
-		/>
-		<link
-			href="{{ url_for('static', filename='styles/menu.css') }}"
-			rel="stylesheet"
-		/>
-		<link
-			href="{{ url_for('static', filename='styles/home.css') }}"
-			rel="stylesheet"
-		/>
-
-		<title>Home | Steganography Tool</title>
-	</head>
-	<body>
-		<header>
-			<a
-				class="active"
-				href="/"
-				>Home</a
-			>
-			<a href="/image/encode">Encode Image</a>
-			<a href="/image/decode">Decode Image</a>
-		</header>
-
-		<div class="content">
-			<h1>Steganography Tool</h1>
-		</div>
-	</body>
-</html>
+{% block content %}
+  <h1>Steganography Tool</h1>
+{% endblock %}

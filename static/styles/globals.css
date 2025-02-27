@@ -1,9 +1,9 @@
 :root {
-	--background-one: #ffffff;
-	--background-two: #f5f5f5;
+	--background-primary: #ffffff;
+	--background-secondary: #f5f5f5;
 
-	--foreground-one: #000000;
-	--foreground-two: #333333;
+	--foreground-primary: #000000;
+	--foreground-secondary: #333333;
 }
 
 *,
@@ -18,7 +18,7 @@ html,
 body,
 input,
 button {
-	color: var(--foreground-one);
+	color: var(--foreground-primary);
 	font-family: "Poppins", sans-serif;
 	font-size: 16px;
 	letter-spacing: 0.25px;
@@ -26,15 +26,15 @@ button {
 
 input,
 button {
-	background: none;
 	border: none;
 	outline: none;
+	background: none;
 }
 
 body {
 	width: 100vw;
 	min-height: 100vh;
-	background: var(--background-one);
+	background: var(--background-primary);
 	display: flex;
 	flex-direction: column;
 }

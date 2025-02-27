@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+			name="viewport"
+		/>
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link
+			href="{{ url_for('static', filename='styles/globals.css') }}"
+			rel="stylesheet"
+		/>
+		<link
+			href="{{ url_for('static', filename='styles/menu.css') }}"
+			rel="stylesheet"
+		/>
+
+		{% block extra_styles %}{% endblock %}
+
+		<title>{% block title %}Steganography Tool{% endblock %}</title>
+	</head>
+	<body>
+		<header>
+			<a
+				class="{% if active_page == 'home' %}active{% endif %}"
+				href="/"
+				>Home</a
+			>
+			<a
+				class="{% if active_page == 'encode' %}active{% endif %}"
+				href="/image/encode"
+				>Encode Image</a
+			>
+			<a
+				class="{% if active_page == 'decode' %}active{% endif %}"
+				href="/image/decode"
+				>Decode Image</a
+			>
+		</header>
+
+		<div class="content">{% block content %}{% endblock %}</div>
+	</body>
+</html>

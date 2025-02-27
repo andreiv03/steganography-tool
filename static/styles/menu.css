@@ -1,5 +1,5 @@
 header {
-	padding: 1rem 0;
+	padding: 1rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -7,10 +7,17 @@ header {
 }
 
 header a {
-	color: var(--foreground-one);
+	color: var(--foreground-primary);
 	text-decoration: none;
 }
 
 header a.active {
 	font-weight: 600;
+}
+
+@media screen and (max-width: 500px) {
+	header {
+		flex-direction: column;
+		gap: 0.5rem;
+	}
 }
