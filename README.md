@@ -1,8 +1,6 @@
 # Steganography Tool
 
-A Flask-based web app that lets you **hide and extract** secret messages from images using **LSB (Least Significant Bit)** steganography.
-
-Featuring an intuitive UI, Docker support, and seamless encoding/decoding, this tool makes image-based cryptography easy and accessible.
+A Flask-based web app that lets you **hide and extract** secret messages from images using **LSB (Least Significant Bit)** steganography. Featuring an intuitive UI, Docker support, and seamless encoding/decoding, this tool makes image-based cryptography easy and accessible.
 
 ## ✨ Features
 
